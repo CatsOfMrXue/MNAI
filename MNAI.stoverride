@@ -5,12 +5,12 @@ http:
     - 'ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions'
   script:
     - match: ^https://ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions/
-      name: zhuabao
+      name: mnai
       type: request 
       require-body: true
       timeout: 20
       argument: ''
 script-providers:
-  zhuabao:
+  mnai:
     url: https://github.com/CatsOfMrXue/MNAI/blob/main/MNAI.js
     interval: 86400
