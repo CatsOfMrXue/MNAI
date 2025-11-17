@@ -4,7 +4,7 @@ http:
   mitm:
     - 'ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions'
   script:
-    - match: ^https://ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions/$
+    - match: ^https://ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions/
       name: zhuabao
       type: request 
       require-body: true
