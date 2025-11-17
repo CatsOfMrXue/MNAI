@@ -1,0 +1,16 @@
+name: MNAI
+desc: MNAI接口抓包
+http:
+  mitm:
+    - '^https?://ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions$'
+  script:
+    - match: ^https://ark\.ap-southeast\.bytepluses\.com/api/v3/chat/completions$
+      name: zhuabao
+      type: request 
+      require-body: true
+      timeout: 20
+      argument: ''
+script-providers:
+  zhuabao:
+    url: https://gist.github.com/CatsOfMrXue/07135089cb4fc68fca186d6502fc212d
+    interval: 86400 
